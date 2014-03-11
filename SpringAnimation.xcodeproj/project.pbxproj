@@ -18,7 +18,6 @@
 		C9C090A118CED136000E69CD /* MTZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0909F18CED136000E69CD /* MTZViewController.m */; };
 		C9C090A318CED13C000E69CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A218CED13C000E69CD /* Images.xcassets */; };
 		C9C090AE18CED161000E69CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090AD18CED161000E69CD /* main.m */; };
-		C9C090BA18CED216000E69CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */; };
 		C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A418CED14C000E69CD /* Main_iPad.storyboard */; };
 		C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C090AA18CED15D000E69CD /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		C9C0909F18CED136000E69CD /* MTZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZViewController.m; path = SpringAnimation/MTZViewController.m; sourceTree = SOURCE_ROOT; };
 		C9C090A218CED13C000E69CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringAnimation/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		C9C090A518CED14C000E69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpringAnimation/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
-		C9C090A718CED14C000E69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpringAnimation/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
 		C9C090AB18CED15D000E69CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SpringAnimation/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		C9C090AD18CED161000E69CD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SpringAnimation/main.m; sourceTree = SOURCE_ROOT; };
 		C9C090AF18CED166000E69CD /* SpringAnimation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SpringAnimation-Info.plist"; path = "SpringAnimation/SpringAnimation-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -118,7 +116,6 @@
 			children = (
 				C9C0909C18CED136000E69CD /* MTZAppDelegate.h */,
 				C9C0909D18CED136000E69CD /* MTZAppDelegate.m */,
-				C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */,
 				C9C090A418CED14C000E69CD /* Main_iPad.storyboard */,
 				C9C0909E18CED136000E69CD /* MTZViewController.h */,
 				C9C0909F18CED136000E69CD /* MTZViewController.m */,
@@ -237,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */,
-				C9C090BA18CED216000E69CD /* Main_iPhone.storyboard in Resources */,
 				C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */,
 				C9C090A318CED13C000E69CD /* Images.xcassets in Resources */,
 			);
@@ -287,14 +283,6 @@
 				C9C090A518CED14C000E69CD /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9C090A718CED14C000E69CD /* Base */,
-			);
-			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		C9C090AA18CED15D000E69CD /* InfoPlist.strings */ = {
@@ -397,6 +385,7 @@
 				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
 				INFOPLIST_FILE = "SpringAnimation/SpringAnimation-Info.plist";
 				PRODUCT_NAME = SpringAnimation;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +399,7 @@
 				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
 				INFOPLIST_FILE = "SpringAnimation/SpringAnimation-Info.plist";
 				PRODUCT_NAME = SpringAnimation;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
