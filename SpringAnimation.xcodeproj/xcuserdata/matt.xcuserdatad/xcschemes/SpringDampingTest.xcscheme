@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C935722B18CEABF00022F5D6"
                BuildableName = "SpringDampingTest.app"
-               BlueprintName = "SpringDampingTest"
-               ReferencedContainer = "container:SpringDampingTest.xcodeproj">
+               BlueprintName = "SpringAnimation"
+               ReferencedContainer = "container:SpringAnimation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C935724F18CEABF00022F5D6"
                BuildableName = "SpringDampingTestTests.xctest"
-               BlueprintName = "SpringDampingTestTests"
-               ReferencedContainer = "container:SpringDampingTest.xcodeproj">
+               BlueprintName = "SpringAnimationTests"
+               ReferencedContainer = "container:SpringAnimation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C935722B18CEABF00022F5D6"
             BuildableName = "SpringDampingTest.app"
-            BlueprintName = "SpringDampingTest"
-            ReferencedContainer = "container:SpringDampingTest.xcodeproj">
+            BlueprintName = "SpringAnimation"
+            ReferencedContainer = "container:SpringAnimation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C935722B18CEABF00022F5D6"
             BuildableName = "SpringDampingTest.app"
-            BlueprintName = "SpringDampingTest"
-            ReferencedContainer = "container:SpringDampingTest.xcodeproj">
+            BlueprintName = "SpringAnimation"
+            ReferencedContainer = "container:SpringAnimation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C935722B18CEABF00022F5D6"
             BuildableName = "SpringDampingTest.app"
-            BlueprintName = "SpringDampingTest"
-            ReferencedContainer = "container:SpringDampingTest.xcodeproj">
+            BlueprintName = "SpringAnimation"
+            ReferencedContainer = "container:SpringAnimation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

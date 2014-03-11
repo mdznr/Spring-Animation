@@ -21,7 +21,7 @@
 		C935725318CEABF00022F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935722F18CEABF00022F5D6 /* Foundation.framework */; };
 		C935725418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
 		C935725C18CEABF00022F5D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935725A18CEABF00022F5D6 /* InfoPlist.strings */; };
-		C935725E18CEABF00022F5D6 /* SpringDampingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C935725D18CEABF00022F5D6 /* SpringDampingTestTests.m */; };
+		C935725E18CEABF00022F5D6 /* SpringAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */; };
 		C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C0907D18CECA90000E69CD /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,14 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C935722C18CEABF00022F5D6 /* SpringDampingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringDampingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C935722C18CEABF00022F5D6 /* SpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935722F18CEABF00022F5D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C935723118CEABF00022F5D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C935723318CEABF00022F5D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C935723718CEABF00022F5D6 /* SpringDampingTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringDampingTest-Info.plist"; sourceTree = "<group>"; };
+		C935723718CEABF00022F5D6 /* SpringAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringAnimation-Info.plist"; sourceTree = "<group>"; };
 		C935723918CEABF00022F5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935723B18CEABF00022F5D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C935723D18CEABF00022F5D6 /* SpringDampingTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpringDampingTest-Prefix.pch"; sourceTree = "<group>"; };
+		C935723D18CEABF00022F5D6 /* SpringAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpringAnimation-Prefix.pch"; sourceTree = "<group>"; };
 		C935723E18CEABF00022F5D6 /* MTZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTZAppDelegate.h; sourceTree = "<group>"; };
 		C935723F18CEABF00022F5D6 /* MTZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTZAppDelegate.m; sourceTree = "<group>"; };
 		C935724218CEABF00022F5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -51,11 +51,11 @@
 		C935724718CEABF00022F5D6 /* MTZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTZViewController.h; sourceTree = "<group>"; };
 		C935724818CEABF00022F5D6 /* MTZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTZViewController.m; sourceTree = "<group>"; };
 		C935724A18CEABF00022F5D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C935725018CEABF00022F5D6 /* SpringDampingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringDampingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C935725018CEABF00022F5D6 /* SpringAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935725118CEABF00022F5D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C935725918CEABF00022F5D6 /* SpringDampingTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringDampingTestTests-Info.plist"; sourceTree = "<group>"; };
+		C935725918CEABF00022F5D6 /* SpringAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringAnimationTests-Info.plist"; sourceTree = "<group>"; };
 		C935725B18CEABF00022F5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C935725D18CEABF00022F5D6 /* SpringDampingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringDampingTestTests.m; sourceTree = "<group>"; };
+		C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationTests.m; sourceTree = "<group>"; };
 		C9C0907D18CECA90000E69CD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -87,8 +87,8 @@
 		C935722318CEABF00022F5D6 = {
 			isa = PBXGroup;
 			children = (
-				C935723518CEABF00022F5D6 /* SpringDampingTest */,
-				C935725718CEABF00022F5D6 /* SpringDampingTestTests */,
+				C935723518CEABF00022F5D6 /* SpringAnimation */,
+				C935725718CEABF00022F5D6 /* SpringAnimationTests */,
 				C935722E18CEABF00022F5D6 /* Frameworks */,
 				C935722D18CEABF00022F5D6 /* Products */,
 			);
@@ -97,8 +97,8 @@
 		C935722D18CEABF00022F5D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C935722C18CEABF00022F5D6 /* SpringDampingTest.app */,
-				C935725018CEABF00022F5D6 /* SpringDampingTestTests.xctest */,
+				C935722C18CEABF00022F5D6 /* SpringAnimation.app */,
+				C935725018CEABF00022F5D6 /* SpringAnimationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C935723518CEABF00022F5D6 /* SpringDampingTest */ = {
+		C935723518CEABF00022F5D6 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				C935723E18CEABF00022F5D6 /* MTZAppDelegate.h */,
@@ -127,33 +127,35 @@
 				C935724A18CEABF00022F5D6 /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
+			name = SpringAnimation;
 			path = SpringDampingTest;
 			sourceTree = "<group>";
 		};
 		C935723618CEABF00022F5D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C935723718CEABF00022F5D6 /* SpringDampingTest-Info.plist */,
+				C935723718CEABF00022F5D6 /* SpringAnimation-Info.plist */,
 				C935723818CEABF00022F5D6 /* InfoPlist.strings */,
 				C935723B18CEABF00022F5D6 /* main.m */,
-				C935723D18CEABF00022F5D6 /* SpringDampingTest-Prefix.pch */,
+				C935723D18CEABF00022F5D6 /* SpringAnimation-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C935725718CEABF00022F5D6 /* SpringDampingTestTests */ = {
+		C935725718CEABF00022F5D6 /* SpringAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C935725D18CEABF00022F5D6 /* SpringDampingTestTests.m */,
+				C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */,
 				C935725818CEABF00022F5D6 /* Supporting Files */,
 			);
+			name = SpringAnimationTests;
 			path = SpringDampingTestTests;
 			sourceTree = "<group>";
 		};
 		C935725818CEABF00022F5D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C935725918CEABF00022F5D6 /* SpringDampingTestTests-Info.plist */,
+				C935725918CEABF00022F5D6 /* SpringAnimationTests-Info.plist */,
 				C935725A18CEABF00022F5D6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -162,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C935722B18CEABF00022F5D6 /* SpringDampingTest */ = {
+		C935722B18CEABF00022F5D6 /* SpringAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C935726118CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringDampingTest" */;
+			buildConfigurationList = C935726118CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringAnimation" */;
 			buildPhases = (
 				C935722818CEABF00022F5D6 /* Sources */,
 				C935722918CEABF00022F5D6 /* Frameworks */,
@@ -174,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = SpringDampingTest;
+			name = SpringAnimation;
 			productName = SpringDampingTest;
-			productReference = C935722C18CEABF00022F5D6 /* SpringDampingTest.app */;
+			productReference = C935722C18CEABF00022F5D6 /* SpringAnimation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C935724F18CEABF00022F5D6 /* SpringDampingTestTests */ = {
+		C935724F18CEABF00022F5D6 /* SpringAnimationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C935726418CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringDampingTestTests" */;
+			buildConfigurationList = C935726418CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringAnimationTests" */;
 			buildPhases = (
 				C935724C18CEABF00022F5D6 /* Sources */,
 				C935724D18CEABF00022F5D6 /* Frameworks */,
@@ -192,9 +194,9 @@
 			dependencies = (
 				C935725618CEABF00022F5D6 /* PBXTargetDependency */,
 			);
-			name = SpringDampingTestTests;
+			name = SpringAnimationTests;
 			productName = SpringDampingTestTests;
-			productReference = C935725018CEABF00022F5D6 /* SpringDampingTestTests.xctest */;
+			productReference = C935725018CEABF00022F5D6 /* SpringAnimationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C935722718CEABF00022F5D6 /* Build configuration list for PBXProject "SpringDampingTest" */;
+			buildConfigurationList = C935722718CEABF00022F5D6 /* Build configuration list for PBXProject "SpringAnimation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C935722B18CEABF00022F5D6 /* SpringDampingTest */,
-				C935724F18CEABF00022F5D6 /* SpringDampingTestTests */,
+				C935722B18CEABF00022F5D6 /* SpringAnimation */,
+				C935724F18CEABF00022F5D6 /* SpringAnimationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C935725E18CEABF00022F5D6 /* SpringDampingTestTests.m in Sources */,
+				C935725E18CEABF00022F5D6 /* SpringAnimationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +279,7 @@
 /* Begin PBXTargetDependency section */
 		C935725618CEABF00022F5D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C935722B18CEABF00022F5D6 /* SpringDampingTest */;
+			target = C935722B18CEABF00022F5D6 /* SpringAnimation */;
 			targetProxy = C935725518CEABF00022F5D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,9 +398,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringDampingTest-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTest/SpringDampingTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SpringDampingTest/SpringAnimation-Prefix.pch";
+				INFOPLIST_FILE = "SpringDampingTest/SpringAnimation-Info.plist";
+				PRODUCT_NAME = SpringAnimation;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,9 +411,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringDampingTest-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTest/SpringDampingTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "SpringDampingTest/SpringAnimation-Prefix.pch";
+				INFOPLIST_FILE = "SpringDampingTest/SpringAnimation-Info.plist";
+				PRODUCT_NAME = SpringAnimation;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -431,8 +433,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SpringDampingTestTests/SpringDampingTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SpringDampingTestTests/SpringAnimationTests-Info.plist";
+				PRODUCT_NAME = SpringAnimationTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -449,8 +451,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpringDampingTest/SpringDampingTest-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTestTests/SpringDampingTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "SpringDampingTestTests/SpringAnimationTests-Info.plist";
+				PRODUCT_NAME = SpringAnimationTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -459,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C935722718CEABF00022F5D6 /* Build configuration list for PBXProject "SpringDampingTest" */ = {
+		C935722718CEABF00022F5D6 /* Build configuration list for PBXProject "SpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C935725F18CEABF00022F5D6 /* Debug */,
@@ -468,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C935726118CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringDampingTest" */ = {
+		C935726118CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C935726218CEABF00022F5D6 /* Debug */,
@@ -477,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C935726418CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringDampingTestTests" */ = {
+		C935726418CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringAnimationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C935726518CEABF00022F5D6 /* Debug */,
