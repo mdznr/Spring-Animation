@@ -19,6 +19,7 @@
 #pragma mark - Public API
 
 /// Begin the spring animation.
+/// @discussion This method is not meant to be overriden.
 - (void)animateWithDuration:(NSTimeInterval)duration
 	 usingSpringWithDamping:(float)dampingRatio
 	  initialSpringVelocity:(float)velocity;
@@ -27,9 +28,13 @@
 #pragma mark - Methods for Subclasses to Override.
 
 /// The animation to demonstrate.
+/// @discussion Do not call this method directly.
+/// @discussion Subclasses must override this method. Do not call this method on @c super.
 - (void)animate;
 
 /// Reset the state of the animation to the beginning.
+/// @discussion Do not call this method directly.
+/// @discussion Subclasses must override this method. Do not call this method on @c super.
 - (void)reset;
 
 @end
