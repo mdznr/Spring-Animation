@@ -9,7 +9,9 @@
 #import "MTZViewController.h"
 
 #import "MTZSpringAnimationParametersViewController.h"
+
 #import "MTZSpringAnimationTranslateViewController.h"
+#import "MTZSpringAnimationRotateViewController.h"
 
 @interface MTZViewController ()
 
