@@ -57,11 +57,11 @@
 					usingSpringWithDamping:self.parametersVC.dampingRatio
 					 initialSpringVelocity:self.parametersVC.velocity];
 	
+	// Animate the progress of the animation at the same rate.
 	[UIView animateWithDuration:self.parametersVC.duration
 						  delay:0.0f
 						options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveLinear
 					 animations:^{
-//						 self.progressView.progress = 1.0f;
 						 [self.progressView setProgress:1.0f animated:YES];
 					 }
 					 completion:^(BOOL finished) {}];
