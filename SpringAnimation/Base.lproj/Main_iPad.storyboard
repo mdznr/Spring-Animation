@@ -12,120 +12,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MkF-kL-rSX" userLabel="Test Spring Animation">
-                                <rect key="frame" x="224" y="962" width="321" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Animate">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="testSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaO-Cs-pj9"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2" id="V5H-ga-jDz" userLabel="Duration Slider">
-                                <rect key="frame" x="407" y="801" width="320" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <action selector="parameterSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M0b-fm-zYx"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="b4n-NJ-pAN" userLabel="Damping Slider">
-                                <rect key="frame" x="407" y="855" width="320" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="tintColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="parameterSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="mTI-31-rcD"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="59U-Gu-IQc" userLabel="Velocity Slider">
-                                <rect key="frame" x="407" y="909" width="320" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="tintColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="parameterSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6aO-Cy-Icq"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="El1-Rn-uSa" userLabel="Code">
-                                <rect key="frame" x="20" y="786" width="364" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="[UIView animateWithDuration:">
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="0.5">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-                      delay:0.0
-     usingSpringWithDamping:</string>
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="0.5">
-                                        <attributes>
-                                            <color key="NSColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-      initialSpringVelocity:</string>
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="0.5">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-                    options:0
-                 animations:...
-                 completion:...];</string>
-                                        <attributes>
-                                            <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="15" name="Menlo-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="bQe-X1-iwo">
-                                <rect key="frame" x="64" y="125" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <navigationBar contentMode="scaleToFill" id="ig5-Du-RUF">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Animation Name" id="0Wd-Hn-yJb"/>
+                                </items>
+                            </navigationBar>
+                            <containerView contentMode="scaleToFill" id="5e6-0Q-ZF9" userLabel="Animations View">
+                                <rect key="frame" x="0.0" y="44" width="768" height="738"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" id="Wav-wa-HYx" userLabel="Playback Controls">
+                                <rect key="frame" x="0.0" y="782" width="768" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <containerView contentMode="scaleToFill" id="zbD-xL-UbA" userLabel="Parameters View Controller">
+                                <rect key="frame" x="0.0" y="822" width="768" height="202"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="codeLabel" destination="El1-Rn-uSa" id="wB4-9y-riI"/>
-                        <outlet property="dampingSlider" destination="b4n-NJ-pAN" id="TxF-kg-pK9"/>
-                        <outlet property="durationSlider" destination="V5H-ga-jDz" id="MmV-Qr-jHi"/>
-                        <outlet property="testView" destination="bQe-X1-iwo" id="P8U-f1-gZu"/>
-                        <outlet property="velocitySlider" destination="59U-Gu-IQc" id="7aE-cI-Ccd"/>
+                        <outlet property="animationsView" destination="5e6-0Q-ZF9" id="U4G-OY-He7"/>
+                        <outlet property="parametersView" destination="zbD-xL-UbA" id="MUz-C8-dyr"/>
+                        <outlet property="playBackControls" destination="Wav-wa-HYx" id="mKi-nS-Dut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

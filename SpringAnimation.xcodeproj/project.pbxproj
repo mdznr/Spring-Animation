@@ -13,13 +13,15 @@
 		C935725218CEABF00022F5D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935725118CEABF00022F5D6 /* XCTest.framework */; };
 		C935725318CEABF00022F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935722F18CEABF00022F5D6 /* Foundation.framework */; };
 		C935725418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
-		C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C0907D18CECA90000E69CD /* CoreText.framework */; };
 		C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0909D18CED136000E69CD /* MTZAppDelegate.m */; };
 		C9C090A118CED136000E69CD /* MTZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0909F18CED136000E69CD /* MTZViewController.m */; };
 		C9C090A318CED13C000E69CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A218CED13C000E69CD /* Images.xcassets */; };
 		C9C090AE18CED161000E69CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090AD18CED161000E69CD /* main.m */; };
 		C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A418CED14C000E69CD /* Main_iPad.storyboard */; };
 		C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C090AA18CED15D000E69CD /* InfoPlist.strings */; };
+		C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090BE18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m */; };
+		C9C090C118CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C090BF18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib */; };
+		C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		C9C090B318CED183000E69CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SpringAnimationTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		C9C090B518CED188000E69CD /* SpringAnimationTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SpringAnimationTests-Info.plist"; path = "SpringAnimationTests/SpringAnimationTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C9C090B718CED18D000E69CD /* SpringAnimationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringAnimationTests.m; path = SpringAnimationTests/SpringAnimationTests.m; sourceTree = SOURCE_ROOT; };
+		C9C090BD18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationParametersViewController.h; path = SpringAnimation/MTZSpringAnimationParametersViewController.h; sourceTree = SOURCE_ROOT; };
+		C9C090BE18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationParametersViewController.m; path = SpringAnimation/MTZSpringAnimationParametersViewController.m; sourceTree = SOURCE_ROOT; };
+		C9C090BF18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationParametersViewController.xib; path = SpringAnimation/MTZSpringAnimationParametersViewController.xib; sourceTree = SOURCE_ROOT; };
+		C9C090C218CEDE63000E69CD /* MTZSpringAnimationViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationViewerController.h; path = SpringAnimation/MTZSpringAnimationViewerController.h; sourceTree = SOURCE_ROOT; };
+		C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationViewerController.m; path = SpringAnimation/MTZSpringAnimationViewerController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */,
 				C935723218CEABF00022F5D6 /* CoreGraphics.framework in Frameworks */,
 				C935723418CEABF00022F5D6 /* UIKit.framework in Frameworks */,
 				C935723018CEABF00022F5D6 /* Foundation.framework in Frameworks */,
@@ -119,6 +125,8 @@
 				C9C090A418CED14C000E69CD /* Main_iPad.storyboard */,
 				C9C0909E18CED136000E69CD /* MTZViewController.h */,
 				C9C0909F18CED136000E69CD /* MTZViewController.m */,
+				C9C090C618CEDF03000E69CD /* Animations */,
+				C9C090C518CEDEFD000E69CD /* Parameters */,
 				C9C090A218CED13C000E69CD /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
@@ -154,6 +162,25 @@
 				C9C090B218CED183000E69CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C090C518CEDEFD000E69CD /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				C9C090BD18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.h */,
+				C9C090BE18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m */,
+				C9C090BF18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib */,
+			);
+			name = Parameters;
+			sourceTree = "<group>";
+		};
+		C9C090C618CEDF03000E69CD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C9C090C218CEDE63000E69CD /* MTZSpringAnimationViewerController.h */,
+				C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C090C118CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib in Resources */,
 				C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */,
 				C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */,
 				C9C090A318CED13C000E69CD /* Images.xcassets in Resources */,
@@ -253,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */,
+				C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */,
 				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
 				C9C090AE18CED161000E69CD /* main.m in Sources */,
 				C9C090A118CED136000E69CD /* MTZViewController.m in Sources */,
