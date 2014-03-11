@@ -10,19 +10,17 @@
 		C935723018CEABF00022F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935722F18CEABF00022F5D6 /* Foundation.framework */; };
 		C935723218CEABF00022F5D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723118CEABF00022F5D6 /* CoreGraphics.framework */; };
 		C935723418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
-		C935723A18CEABF00022F5D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935723818CEABF00022F5D6 /* InfoPlist.strings */; };
-		C935723C18CEABF00022F5D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C935723B18CEABF00022F5D6 /* main.m */; };
-		C935724018CEABF00022F5D6 /* MTZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C935723F18CEABF00022F5D6 /* MTZAppDelegate.m */; };
-		C935724318CEABF00022F5D6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C935724118CEABF00022F5D6 /* Main_iPhone.storyboard */; };
-		C935724618CEABF00022F5D6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C935724418CEABF00022F5D6 /* Main_iPad.storyboard */; };
-		C935724918CEABF00022F5D6 /* MTZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C935724818CEABF00022F5D6 /* MTZViewController.m */; };
-		C935724B18CEABF00022F5D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C935724A18CEABF00022F5D6 /* Images.xcassets */; };
 		C935725218CEABF00022F5D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935725118CEABF00022F5D6 /* XCTest.framework */; };
 		C935725318CEABF00022F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935722F18CEABF00022F5D6 /* Foundation.framework */; };
 		C935725418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
-		C935725C18CEABF00022F5D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935725A18CEABF00022F5D6 /* InfoPlist.strings */; };
-		C935725E18CEABF00022F5D6 /* SpringAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */; };
 		C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C0907D18CECA90000E69CD /* CoreText.framework */; };
+		C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0909D18CED136000E69CD /* MTZAppDelegate.m */; };
+		C9C090A118CED136000E69CD /* MTZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0909F18CED136000E69CD /* MTZViewController.m */; };
+		C9C090A318CED13C000E69CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A218CED13C000E69CD /* Images.xcassets */; };
+		C9C090AE18CED161000E69CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090AD18CED161000E69CD /* main.m */; };
+		C9C090BA18CED216000E69CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */; };
+		C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C090A418CED14C000E69CD /* Main_iPad.storyboard */; };
+		C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C090AA18CED15D000E69CD /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,23 +38,23 @@
 		C935722F18CEABF00022F5D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C935723118CEABF00022F5D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C935723318CEABF00022F5D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C935723718CEABF00022F5D6 /* SpringAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringAnimation-Info.plist"; sourceTree = "<group>"; };
-		C935723918CEABF00022F5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C935723B18CEABF00022F5D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C935723D18CEABF00022F5D6 /* SpringAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpringAnimation-Prefix.pch"; sourceTree = "<group>"; };
-		C935723E18CEABF00022F5D6 /* MTZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTZAppDelegate.h; sourceTree = "<group>"; };
-		C935723F18CEABF00022F5D6 /* MTZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTZAppDelegate.m; sourceTree = "<group>"; };
-		C935724218CEABF00022F5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C935724518CEABF00022F5D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C935724718CEABF00022F5D6 /* MTZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTZViewController.h; sourceTree = "<group>"; };
-		C935724818CEABF00022F5D6 /* MTZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTZViewController.m; sourceTree = "<group>"; };
-		C935724A18CEABF00022F5D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C935725018CEABF00022F5D6 /* SpringAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935725118CEABF00022F5D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C935725918CEABF00022F5D6 /* SpringAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringAnimationTests-Info.plist"; sourceTree = "<group>"; };
-		C935725B18CEABF00022F5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationTests.m; sourceTree = "<group>"; };
 		C9C0907D18CECA90000E69CD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C9C0909C18CED136000E69CD /* MTZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZAppDelegate.h; path = SpringAnimation/MTZAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		C9C0909D18CED136000E69CD /* MTZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZAppDelegate.m; path = SpringAnimation/MTZAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		C9C0909E18CED136000E69CD /* MTZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZViewController.h; path = SpringAnimation/MTZViewController.h; sourceTree = SOURCE_ROOT; };
+		C9C0909F18CED136000E69CD /* MTZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZViewController.m; path = SpringAnimation/MTZViewController.m; sourceTree = SOURCE_ROOT; };
+		C9C090A218CED13C000E69CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringAnimation/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		C9C090A518CED14C000E69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpringAnimation/Base.lproj/Main_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		C9C090A718CED14C000E69CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SpringAnimation/Base.lproj/Main_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		C9C090AB18CED15D000E69CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SpringAnimation/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		C9C090AD18CED161000E69CD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SpringAnimation/main.m; sourceTree = SOURCE_ROOT; };
+		C9C090AF18CED166000E69CD /* SpringAnimation-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SpringAnimation-Info.plist"; path = "SpringAnimation/SpringAnimation-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C9C090B018CED166000E69CD /* SpringAnimation-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpringAnimation-Prefix.pch"; path = "SpringAnimation/SpringAnimation-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C9C090B318CED183000E69CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = SpringAnimationTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		C9C090B518CED188000E69CD /* SpringAnimationTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SpringAnimationTests-Info.plist"; path = "SpringAnimationTests/SpringAnimationTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C9C090B718CED18D000E69CD /* SpringAnimationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpringAnimationTests.m; path = SpringAnimationTests/SpringAnimationTests.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,13 +116,13 @@
 		C935723518CEABF00022F5D6 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C935723E18CEABF00022F5D6 /* MTZAppDelegate.h */,
-				C935723F18CEABF00022F5D6 /* MTZAppDelegate.m */,
-				C935724118CEABF00022F5D6 /* Main_iPhone.storyboard */,
-				C935724418CEABF00022F5D6 /* Main_iPad.storyboard */,
-				C935724718CEABF00022F5D6 /* MTZViewController.h */,
-				C935724818CEABF00022F5D6 /* MTZViewController.m */,
-				C935724A18CEABF00022F5D6 /* Images.xcassets */,
+				C9C0909C18CED136000E69CD /* MTZAppDelegate.h */,
+				C9C0909D18CED136000E69CD /* MTZAppDelegate.m */,
+				C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */,
+				C9C090A418CED14C000E69CD /* Main_iPad.storyboard */,
+				C9C0909E18CED136000E69CD /* MTZViewController.h */,
+				C9C0909F18CED136000E69CD /* MTZViewController.m */,
+				C9C090A218CED13C000E69CD /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
 			name = SpringAnimation;
@@ -134,10 +132,10 @@
 		C935723618CEABF00022F5D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C935723718CEABF00022F5D6 /* SpringAnimation-Info.plist */,
-				C935723818CEABF00022F5D6 /* InfoPlist.strings */,
-				C935723B18CEABF00022F5D6 /* main.m */,
-				C935723D18CEABF00022F5D6 /* SpringAnimation-Prefix.pch */,
+				C9C090AF18CED166000E69CD /* SpringAnimation-Info.plist */,
+				C9C090AA18CED15D000E69CD /* InfoPlist.strings */,
+				C9C090AD18CED161000E69CD /* main.m */,
+				C9C090B018CED166000E69CD /* SpringAnimation-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,7 +143,7 @@
 		C935725718CEABF00022F5D6 /* SpringAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C935725D18CEABF00022F5D6 /* SpringAnimationTests.m */,
+				C9C090B718CED18D000E69CD /* SpringAnimationTests.m */,
 				C935725818CEABF00022F5D6 /* Supporting Files */,
 			);
 			name = SpringAnimationTests;
@@ -155,8 +153,8 @@
 		C935725818CEABF00022F5D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C935725918CEABF00022F5D6 /* SpringAnimationTests-Info.plist */,
-				C935725A18CEABF00022F5D6 /* InfoPlist.strings */,
+				C9C090B518CED188000E69CD /* SpringAnimationTests-Info.plist */,
+				C9C090B218CED183000E69CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,10 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C935724618CEABF00022F5D6 /* Main_iPad.storyboard in Resources */,
-				C935724B18CEABF00022F5D6 /* Images.xcassets in Resources */,
-				C935724318CEABF00022F5D6 /* Main_iPhone.storyboard in Resources */,
-				C935723A18CEABF00022F5D6 /* InfoPlist.strings in Resources */,
+				C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */,
+				C9C090BA18CED216000E69CD /* Main_iPhone.storyboard in Resources */,
+				C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */,
+				C9C090A318CED13C000E69CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C935725C18CEABF00022F5D6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C935724018CEABF00022F5D6 /* MTZAppDelegate.m in Sources */,
-				C935723C18CEABF00022F5D6 /* main.m in Sources */,
-				C935724918CEABF00022F5D6 /* MTZViewController.m in Sources */,
+				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
+				C9C090AE18CED161000E69CD /* main.m in Sources */,
+				C9C090A118CED136000E69CD /* MTZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C935725E18CEABF00022F5D6 /* SpringAnimationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,34 +281,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C935723818CEABF00022F5D6 /* InfoPlist.strings */ = {
+		C9C090A418CED14C000E69CD /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C935723918CEABF00022F5D6 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C935724118CEABF00022F5D6 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C935724218CEABF00022F5D6 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		C935724418CEABF00022F5D6 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C935724518CEABF00022F5D6 /* Base */,
+				C9C090A518CED14C000E69CD /* Base */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		C935725A18CEABF00022F5D6 /* InfoPlist.strings */ = {
+		C9C090A618CED14C000E69CD /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C935725B18CEABF00022F5D6 /* en */,
+				C9C090A718CED14C000E69CD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C090AA18CED15D000E69CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C090AB18CED15D000E69CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9C090B218CED183000E69CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C090B318CED183000E69CD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -398,8 +394,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringAnimation-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTest/SpringAnimation-Info.plist";
+				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
+				INFOPLIST_FILE = "SpringAnimation/SpringAnimation-Info.plist";
 				PRODUCT_NAME = SpringAnimation;
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,8 +407,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringAnimation-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTest/SpringAnimation-Info.plist";
+				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
+				INFOPLIST_FILE = "SpringAnimation/SpringAnimation-Info.plist";
 				PRODUCT_NAME = SpringAnimation;
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,19 +417,19 @@
 		C935726518CEABF00022F5D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpringDampingTest.app/SpringDampingTest";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpringAnimation.app/SpringAnimation";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringDampingTest-Prefix.pch";
+				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SpringDampingTestTests/SpringAnimationTests-Info.plist";
+				INFOPLIST_FILE = "SpringAnimationTests/SpringAnimationTests-Info.plist";
 				PRODUCT_NAME = SpringAnimationTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -443,15 +439,15 @@
 		C935726618CEABF00022F5D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpringDampingTest.app/SpringDampingTest";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpringAnimation.app/SpringAnimation";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpringDampingTest/SpringDampingTest-Prefix.pch";
-				INFOPLIST_FILE = "SpringDampingTestTests/SpringAnimationTests-Info.plist";
+				GCC_PREFIX_HEADER = "SpringAnimation/SpringAnimation-Prefix.pch";
+				INFOPLIST_FILE = "SpringAnimationTests/SpringAnimationTests-Info.plist";
 				PRODUCT_NAME = SpringAnimationTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
