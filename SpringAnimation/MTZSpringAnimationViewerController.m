@@ -10,8 +10,6 @@
 
 #import "AbstractClass.h"
 
-#define TIME_TO_WAIT_AFTER_ANIMATION 1
-
 @interface MTZSpringAnimationViewerController ()
 
 @end

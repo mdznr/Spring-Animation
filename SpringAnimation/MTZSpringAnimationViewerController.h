@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define TIME_TO_WAIT_AFTER_ANIMATION 1
+
 @interface MTZSpringAnimationViewerController : UIViewController
 
 /*

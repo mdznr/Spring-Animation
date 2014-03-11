@@ -21,10 +21,13 @@
 
 /// The subview for the animations view.
 @property (weak, nonatomic) IBOutlet UIView *animationsView;
+
 /// The subview for the parameters view.
 @property (weak, nonatomic) IBOutlet UIView *parametersView;
+
 /// The subview for the playback controls.
 @property (weak, nonatomic) IBOutlet UIView *playBackControls;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
 @end
 
@@ -53,6 +56,20 @@
 	[self.animationsVC animateWithDuration:self.parametersVC.duration
 					usingSpringWithDamping:self.parametersVC.dampingRatio
 					 initialSpringVelocity:self.parametersVC.velocity];
+	
+	[UIView animateWithDuration:self.parametersVC.duration
+						  delay:0.0f
+						options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveLinear
+					 animations:^{
+//						 self.progressView.progress = 1.0f;
+						 [self.progressView setProgress:1.0f animated:YES];
+					 }
+					 completion:^(BOOL finished) {}];
+	
+	// Reset the progress view after the completion of the animation.
+	[self.progressView performSelector:@selector(setProgress:)
+							withObject:@(0.0f)
+							afterDelay:self.parametersVC.duration + TIME_TO_WAIT_AFTER_ANIMATION];
 }
 
 - (BOOL)prefersStatusBarHidden

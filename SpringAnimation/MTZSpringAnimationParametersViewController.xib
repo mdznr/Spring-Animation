@@ -90,7 +90,7 @@
                         <action selector="parameterSliderDidChange:" destination="-1" eventType="valueChanged" id="fMT-nu-c6X"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="vZ0-44-BUe" userLabel="Damping Slider">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" id="vZ0-44-BUe" userLabel="Damping Slider">
                     <rect key="frame" x="416" y="86" width="320" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
