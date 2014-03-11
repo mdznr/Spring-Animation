@@ -28,7 +28,7 @@
 - (IBAction)parameterSliderDidChange:(id)sender
 {
 	// The example code.
-	NSString *string = [NSString stringWithFormat:@"    [UIView animateWithDuration:%.2f\n                          delay:0.0\n         usingSpringWithDamping:%.2f\n          initialSpringVelocity:%.2f\n                        options:0\n                      animations:...\n                     completion:...];", _durationSlider.value, _dampingSlider.value, _velocitySlider.value];
+	NSString *string = [NSString stringWithFormat:@"    [UIView animateWithDuration:%.2f\n                          delay:0.0\n         usingSpringWithDamping:%.2f\n          initialSpringVelocity:%.2f\n                        options:0\n                     animations:...\n                     completion:...];", _durationSlider.value, _dampingSlider.value, _velocitySlider.value];
 	
 	// Create an attributed string to color in the parameters.
 	NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];
