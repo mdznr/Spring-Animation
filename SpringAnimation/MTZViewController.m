@@ -57,6 +57,11 @@
 					usingSpringWithDamping:self.parametersVC.dampingRatio
 					 initialSpringVelocity:self.parametersVC.velocity];
 	
+	[self resetProgress];
+	[NSObject cancelPreviousPerformRequestsWithTarget:self
+											 selector:@selector(resetProgress)
+											   object:nil];
+	
 	// Animate the progress of the animation at the same rate.
 	[UIView animateWithDuration:self.parametersVC.duration
 						  delay:0.0f
@@ -67,9 +72,14 @@
 					 completion:^(BOOL finished) {}];
 	
 	// Reset the progress view after the completion of the animation.
-	[self.progressView performSelector:@selector(setProgress:)
-							withObject:@(0.0f)
-							afterDelay:self.parametersVC.duration + TIME_TO_WAIT_AFTER_ANIMATION];
+	[self performSelector:@selector(resetProgress)
+			   withObject:nil
+			   afterDelay:self.parametersVC.duration + TIME_TO_WAIT_AFTER_ANIMATION];
+}
+
+- (void)resetProgress
+{
+	[self.progressView setProgress:0.0f animated:NO];
 }
 
 - (BOOL)prefersStatusBarHidden
