@@ -45,7 +45,7 @@
 	UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
 	btn.frame = CGRectMake(0, 0, 100, 40);
 	btn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-	[btn setTitle:@"Animation: Translate" forState:UIControlStateNormal];
+	[btn setTitle:@"Translate" forState:UIControlStateNormal];
 	[btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 	[btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
 	[btn addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
@@ -61,7 +61,7 @@
 	
 	// Create animations view controller.
 	self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
-	self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
+//	self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
 	// Add it to the appropriate container view.
 	[self.animationsView addSubview:self.animationsVC.view];
 }
