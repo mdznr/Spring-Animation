@@ -29,7 +29,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="0.5">
+                        <fragment content="0.50">
                             <attributes>
                                 <color key="NSColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="15" name="Menlo-Regular"/>
@@ -46,7 +46,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="0.5">
+                        <fragment content="0.50">
                             <attributes>
                                 <color key="NSColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="15" name="Menlo-Regular"/>
@@ -62,7 +62,7 @@
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
-                        <fragment content="0.5">
+                        <fragment content="0.50">
                             <attributes>
                                 <color key="NSColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="15" name="Menlo-Regular"/>
@@ -98,7 +98,7 @@
                         <action selector="parameterSliderDidChange:" destination="-1" eventType="valueChanged" id="32c-oj-Un4"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="CWu-Bz-gFK" userLabel="Velocity Slider">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" id="CWu-Bz-gFK" userLabel="Velocity Slider">
                     <rect key="frame" x="416" y="140" width="320" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
