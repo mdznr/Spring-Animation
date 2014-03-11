@@ -28,16 +28,6 @@
 
 @end
 
-/// The different parameters of a spring animation.
-typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
-	/// The duration of a spring animation.
-	MTZSpringAnimationParameterDuration,
-	/// The spring damping of a spring animation.
-	MTZSpringAnimationParameterDamping,
-	/// The initial velocity of a spring animation.
-	MTZSpringAnimationParameterVelocity
-};
-
 @implementation MTZViewController
 
 - (void)viewDidLoad
