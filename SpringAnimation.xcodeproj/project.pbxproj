@@ -24,6 +24,7 @@
 		C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */; };
 		C9C090CA18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090C818CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m */; };
 		C9C090CB18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C090C918CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib */; };
+		C9C090D218CEEC4F000E69CD /* MTZPlaybackControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090D118CEEC4F000E69CD /* MTZPlaybackControlsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		C9C090C818CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationTranslateViewController.m; path = SpringAnimation/MTZSpringAnimationTranslateViewController.m; sourceTree = SOURCE_ROOT; };
 		C9C090C918CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationTranslateViewController.xib; path = SpringAnimation/MTZSpringAnimationTranslateViewController.xib; sourceTree = SOURCE_ROOT; };
 		C9C090CE18CEE9A1000E69CD /* AbstractClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AbstractClass.h; path = SpringAnimation/AbstractClass.h; sourceTree = SOURCE_ROOT; };
+		C9C090D018CEEC4F000E69CD /* MTZPlaybackControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZPlaybackControlsView.h; path = SpringAnimation/MTZPlaybackControlsView.h; sourceTree = SOURCE_ROOT; };
+		C9C090D118CEEC4F000E69CD /* MTZPlaybackControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZPlaybackControlsView.m; path = SpringAnimation/MTZPlaybackControlsView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +134,11 @@
 				C9C090A418CED14C000E69CD /* Main_iPad.storyboard */,
 				C9C0909E18CED136000E69CD /* MTZViewController.h */,
 				C9C0909F18CED136000E69CD /* MTZViewController.m */,
+				C9C090D018CEEC4F000E69CD /* MTZPlaybackControlsView.h */,
+				C9C090D118CEEC4F000E69CD /* MTZPlaybackControlsView.m */,
 				C9C090C518CEDEFD000E69CD /* Parameters */,
 				C9C090C618CEDF03000E69CD /* Animations */,
-				C9C090CE18CEE9A1000E69CD /* AbstractClass.h */,
+				C9C090CF18CEEC18000E69CD /* Helper */,
 				C9C090A218CED13C000E69CD /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
@@ -207,6 +212,14 @@
 				C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */,
 			);
 			name = Generic;
+			sourceTree = "<group>";
+		};
+		C9C090CF18CEEC18000E69CD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C9C090CE18CEE9A1000E69CD /* AbstractClass.h */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +324,7 @@
 				C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */,
 				C9C090CA18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m in Sources */,
 				C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */,
+				C9C090D218CEEC4F000E69CD /* MTZPlaybackControlsView.m in Sources */,
 				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
 				C9C090AE18CED161000E69CD /* main.m in Sources */,
 				C9C090A118CED136000E69CD /* MTZViewController.m in Sources */,

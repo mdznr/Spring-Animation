@@ -46,15 +46,18 @@
 	[self.animationsView addSubview:self.animationsVC.view];
 }
 
+// When the animate/play button is tapped.
+- (IBAction)animate:(id)sender
+{
+	// Tell the animations view controller to animate based on the parameters.
+	[self.animationsVC animateWithDuration:self.parametersVC.duration
+					usingSpringWithDamping:self.parametersVC.dampingRatio
+					 initialSpringVelocity:self.parametersVC.velocity];
+}
+
 - (BOOL)prefersStatusBarHidden
 {
 	return YES;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
