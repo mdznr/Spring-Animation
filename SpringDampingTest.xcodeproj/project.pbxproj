@@ -22,6 +22,8 @@
 		C935725418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
 		C935725C18CEABF00022F5D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935725A18CEABF00022F5D6 /* InfoPlist.strings */; };
 		C935725E18CEABF00022F5D6 /* SpringDampingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C935725D18CEABF00022F5D6 /* SpringDampingTestTests.m */; };
+		C9C0907618CEC719000E69CD /* UIColor+NeueColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C0907518CEC719000E69CD /* UIColor+NeueColors.m */; };
+		C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C0907D18CECA90000E69CD /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		C935725918CEABF00022F5D6 /* SpringDampingTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpringDampingTestTests-Info.plist"; sourceTree = "<group>"; };
 		C935725B18CEABF00022F5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935725D18CEABF00022F5D6 /* SpringDampingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringDampingTestTests.m; sourceTree = "<group>"; };
+		C9C0907418CEC719000E69CD /* UIColor+NeueColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NeueColors.h"; sourceTree = "<group>"; };
+		C9C0907518CEC719000E69CD /* UIColor+NeueColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NeueColors.m"; sourceTree = "<group>"; };
+		C9C0907D18CECA90000E69CD /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C0907E18CECA90000E69CD /* CoreText.framework in Frameworks */,
 				C935723218CEABF00022F5D6 /* CoreGraphics.framework in Frameworks */,
 				C935723418CEABF00022F5D6 /* UIKit.framework in Frameworks */,
 				C935723018CEABF00022F5D6 /* Foundation.framework in Frameworks */,
@@ -103,6 +109,7 @@
 		C935722E18CEABF00022F5D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9C0907D18CECA90000E69CD /* CoreText.framework */,
 				C935722F18CEABF00022F5D6 /* Foundation.framework */,
 				C935723118CEABF00022F5D6 /* CoreGraphics.framework */,
 				C935723318CEABF00022F5D6 /* UIKit.framework */,
@@ -120,6 +127,8 @@
 				C935724418CEABF00022F5D6 /* Main_iPad.storyboard */,
 				C935724718CEABF00022F5D6 /* MTZViewController.h */,
 				C935724818CEABF00022F5D6 /* MTZViewController.m */,
+				C9C0907418CEC719000E69CD /* UIColor+NeueColors.h */,
+				C9C0907518CEC719000E69CD /* UIColor+NeueColors.m */,
 				C935724A18CEABF00022F5D6 /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
@@ -256,6 +265,7 @@
 			files = (
 				C935724018CEABF00022F5D6 /* MTZAppDelegate.m in Sources */,
 				C935723C18CEABF00022F5D6 /* main.m in Sources */,
+				C9C0907618CEC719000E69CD /* UIColor+NeueColors.m in Sources */,
 				C935724918CEABF00022F5D6 /* MTZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +481,7 @@
 				C935726318CEABF00022F5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C935726418CEABF00022F5D6 /* Build configuration list for PBXNativeTarget "SpringDampingTestTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				C935726618CEABF00022F5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

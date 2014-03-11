@@ -6,24 +6,36 @@
 //  Copyright (c) 2014 Matt Zanchelli. All rights reserved.
 //
 
+#import <CoreText/CoreText.h>
+
 #import "MTZViewController.h"
+
+#import "UIColor+NeueColors.h"
 
 @interface MTZViewController ()
 
-// Sliders.
+// The parameter sliders.
 @property (weak, nonatomic) IBOutlet UISlider *durationSlider;
 @property (weak, nonatomic) IBOutlet UISlider *dampingSlider;
 @property (weak, nonatomic) IBOutlet UISlider *velocitySlider;
 
-// Values.
-@property (weak, nonatomic) IBOutlet UILabel *durationValue;
-@property (weak, nonatomic) IBOutlet UILabel *dampingValue;
-@property (weak, nonatomic) IBOutlet UILabel *velocityValue;
+// The example animation code.
+@property (weak, nonatomic) IBOutlet UILabel *codeLabel;
 
-// View to animate.
+// The view to animate.
 @property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end
+
+/// The different parameters of a spring animation.
+typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
+	/// The duration of a spring animation.
+	MTZSpringAnimationParameterDuration,
+	/// The spring damping of a spring animation.
+	MTZSpringAnimationParameterDamping,
+	/// The initial velocity of a spring animation.
+	MTZSpringAnimationParameterVelocity
+};
 
 @implementation MTZViewController
 
@@ -33,9 +45,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	// Force value label update for all parameters.
-	[self parameterSliderChanged:_durationSlider];
-	[self parameterSliderChanged:_dampingSlider];
-	[self parameterSliderChanged:_velocitySlider];
+	[self parameterSliderChanged:nil];
 }
 
 /// Perfomed with "Test Spring Animation" button is tapped.
@@ -57,21 +67,19 @@
 /// Perfomed when parameter slider values are changed.
 - (IBAction)parameterSliderChanged:(UISlider *)sender
 {
-	// Find which label to update.
-	UILabel *label;
-	if ( sender == _durationSlider ) {
-		label = _durationValue;
-	} else if ( sender == _dampingSlider ) {
-		label = _dampingValue;
-	} else if ( sender == _velocitySlider ) {
-		label = _velocityValue;
-	}
+	NSString *string = [NSString stringWithFormat:@"[UIView animateWithDuration:%.2f\n                      delay:0.0\n     usingSpringWithDamping:%.2f\n      initialSpringVelocity:%.2f\n                    options:0\n                 animations:...\n                 completion:...];", _durationSlider.value, _dampingSlider.value, _velocitySlider.value];
+	NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];
 	
-	// Put the value into a string and update it.
-	NSString *value = [NSString stringWithFormat:@"%.2f", sender.value];
-	label.text = value;
+#warning Easiest way of not hard-coding in the location of each value?
+	// Duration
+	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueBlue] range:NSMakeRange(28, 4)];
+	// Damping
+	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueGreen] range:NSMakeRange(93, 4)];
+	// Initial Velocity
+	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueRed] range:NSMakeRange(126, 4)];
+	
+	_codeLabel.attributedText = attrString;
 }
-
 
 - (void)resetAnimatedViews
 {
