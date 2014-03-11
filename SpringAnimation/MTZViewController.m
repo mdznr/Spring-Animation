@@ -44,7 +44,14 @@ typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	
+	// Create parameters view controller.
+	self.parametersVC = [[MTZSpringAnimationParametersViewController alloc] initWithNibName:@"MTZSpringAnimationParametersViewController" bundle:nil];
+	// Add it to the appropriate container view.
+	[self.parametersView addSubview:self.parametersVC.view];
 }
+
+/*
 
 /// Perfomed with "Test Spring Animation" button is tapped.
 - (IBAction)testSpringAnimation:(id)sender
@@ -73,6 +80,8 @@ typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
 	// Put the test view back where it belongs.
 	_testView.transform = CGAffineTransformIdentity;
 }
+ 
+ */
 
 - (BOOL)prefersStatusBarHidden
 {
