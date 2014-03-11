@@ -40,7 +40,9 @@
 					 }
 					 completion:^(BOOL finished) {
 						 // Reset shortly after the expected completion of the animation.
-						 [self performSelector:@selector(reset) withObject:nil afterDelay:TIME_TO_WAIT_AFTER_ANIMATION];
+						 [self performSelector:@selector(reset)
+									withObject:nil
+									afterDelay:TIME_TO_WAIT_AFTER_ANIMATION];
 					 }];
 }
 
