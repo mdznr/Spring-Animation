@@ -22,6 +22,8 @@
 		C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090BE18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m */; };
 		C9C090C118CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C090BF18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib */; };
 		C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */; };
+		C9C090CA18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090C818CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m */; };
+		C9C090CB18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C090C918CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		C9C090BF18CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationParametersViewController.xib; path = SpringAnimation/MTZSpringAnimationParametersViewController.xib; sourceTree = SOURCE_ROOT; };
 		C9C090C218CEDE63000E69CD /* MTZSpringAnimationViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationViewerController.h; path = SpringAnimation/MTZSpringAnimationViewerController.h; sourceTree = SOURCE_ROOT; };
 		C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationViewerController.m; path = SpringAnimation/MTZSpringAnimationViewerController.m; sourceTree = SOURCE_ROOT; };
+		C9C090C718CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationTranslateViewController.h; path = SpringAnimation/MTZSpringAnimationTranslateViewController.h; sourceTree = SOURCE_ROOT; };
+		C9C090C818CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationTranslateViewController.m; path = SpringAnimation/MTZSpringAnimationTranslateViewController.m; sourceTree = SOURCE_ROOT; };
+		C9C090C918CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationTranslateViewController.xib; path = SpringAnimation/MTZSpringAnimationTranslateViewController.xib; sourceTree = SOURCE_ROOT; };
+		C9C090CE18CEE9A1000E69CD /* AbstractClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AbstractClass.h; path = SpringAnimation/AbstractClass.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +131,9 @@
 				C9C090A418CED14C000E69CD /* Main_iPad.storyboard */,
 				C9C0909E18CED136000E69CD /* MTZViewController.h */,
 				C9C0909F18CED136000E69CD /* MTZViewController.m */,
-				C9C090C618CEDF03000E69CD /* Animations */,
 				C9C090C518CEDEFD000E69CD /* Parameters */,
+				C9C090C618CEDF03000E69CD /* Animations */,
+				C9C090CE18CEE9A1000E69CD /* AbstractClass.h */,
 				C9C090A218CED13C000E69CD /* Images.xcassets */,
 				C935723618CEABF00022F5D6 /* Supporting Files */,
 			);
@@ -177,10 +184,29 @@
 		C9C090C618CEDF03000E69CD /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				C9C090CD18CEE6DD000E69CD /* Generic */,
+				C9C090CC18CEE6D3000E69CD /* Translate */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		C9C090CC18CEE6D3000E69CD /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				C9C090C718CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.h */,
+				C9C090C818CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m */,
+				C9C090C918CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib */,
+			);
+			name = Translate;
+			sourceTree = "<group>";
+		};
+		C9C090CD18CEE6DD000E69CD /* Generic */ = {
+			isa = PBXGroup;
+			children = (
 				C9C090C218CEDE63000E69CD /* MTZSpringAnimationViewerController.h */,
 				C9C090C318CEDE63000E69CD /* MTZSpringAnimationViewerController.m */,
 			);
-			name = Animations;
+			name = Generic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +288,7 @@
 			files = (
 				C9C090C118CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.xib in Resources */,
 				C9C090BC18CED232000E69CD /* InfoPlist.strings in Resources */,
+				C9C090CB18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.xib in Resources */,
 				C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */,
 				C9C090A318CED13C000E69CD /* Images.xcassets in Resources */,
 			);
@@ -282,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */,
+				C9C090CA18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m in Sources */,
 				C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */,
 				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
 				C9C090AE18CED161000E69CD /* main.m in Sources */,

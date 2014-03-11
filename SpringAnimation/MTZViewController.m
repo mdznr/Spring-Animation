@@ -9,7 +9,7 @@
 #import "MTZViewController.h"
 
 #import "MTZSpringAnimationParametersViewController.h"
-#import "MTZSpringAnimationViewerController.h"
+#import "MTZSpringAnimationTranslateViewController.h"
 
 @interface MTZViewController ()
 
@@ -39,39 +39,12 @@
 	self.parametersVC = [[MTZSpringAnimationParametersViewController alloc] initWithNibName:@"MTZSpringAnimationParametersViewController" bundle:nil];
 	// Add it to the appropriate container view.
 	[self.parametersView addSubview:self.parametersVC.view];
-}
-
-/*
-
-/// Perfomed with "Test Spring Animation" button is tapped.
-- (IBAction)testSpringAnimation:(id)sender
-{
-	// Ensure animation won't be interrupted by a pending reset (completion of a prior animation).
-	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(resetAnimatedViews) object:nil];
 	
-	// Start at the beginning.
-	[self resetAnimatedViews];
-	
-	[UIView animateWithDuration:_durationSlider.value
-						  delay:0.0f
-		 usingSpringWithDamping:_dampingSlider.value
-		  initialSpringVelocity:_velocitySlider.value
-						options:0
-					 animations:^{
-						 _testView.transform = CGAffineTransformTranslate(_testView.transform, 320, 0);
-					 }
-					 completion:^(BOOL finished) {
-						 [self performSelector:@selector(resetAnimatedViews) withObject:nil afterDelay:1.0f];
-					 }];
+	// Create animations view controller.
+	self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
+	// Add it to the appropriate container view.
+	[self.animationsView addSubview:self.animationsVC.view];
 }
-
-- (void)resetAnimatedViews
-{
-	// Put the test view back where it belongs.
-	_testView.transform = CGAffineTransformIdentity;
-}
- 
- */
 
 - (BOOL)prefersStatusBarHidden
 {
