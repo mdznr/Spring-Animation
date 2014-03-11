@@ -68,7 +68,8 @@
 
 - (void)didTapTitle:(id)sender
 {
-	NSLog(@"asdf");
+	UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Choose an animation." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Translate", @"Rotate", nil];
+	[as showFromRect:self.navigationBar.frame inView:self.view animated:YES];
 }
 
 // When the animate/play button is tapped.
