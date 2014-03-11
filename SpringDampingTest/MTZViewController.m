@@ -49,6 +49,12 @@ typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
 /// Perfomed with "Test Spring Animation" button is tapped.
 - (IBAction)testSpringAnimation:(id)sender
 {
+	// Ensure animation won't be interrupted by a pending reset (completion of a prior animation).
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(resetAnimatedViews) object:nil];
+	
+	// Start at the beginning.
+	[self resetAnimatedViews];
+	
 	[UIView animateWithDuration:_durationSlider.value
 						  delay:0.0f
 		 usingSpringWithDamping:_dampingSlider.value
