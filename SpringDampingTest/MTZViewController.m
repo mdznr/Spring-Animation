@@ -85,6 +85,11 @@ typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
 	_testView.transform = CGAffineTransformIdentity;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+	return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
