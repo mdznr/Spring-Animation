@@ -24,6 +24,14 @@
 
 @implementation MTZSpringAnimationParametersViewController
 
+- (void)viewDidLoad
+{
+	[super viewDidLoad];
+	
+	// Force update of parameter values in example code.
+	[self parameterSliderDidChange:nil];
+}
+
 /// Perfomed when parameter slider values are changed.
 - (IBAction)parameterSliderDidChange:(id)sender
 {
