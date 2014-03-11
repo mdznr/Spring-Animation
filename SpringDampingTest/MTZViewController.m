@@ -10,8 +10,6 @@
 
 #import "MTZViewController.h"
 
-#import "UIColor+NeueColors.h"
-
 @interface MTZViewController ()
 
 // The parameter sliders.
@@ -72,11 +70,11 @@ typedef NS_ENUM(NSUInteger, MTZSpringAnimationParameter) {
 	
 #warning Easiest way of not hard-coding in the location of each value?
 	// Duration
-	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueBlue] range:NSMakeRange(28, 4)];
+	[attrString addAttribute:NSForegroundColorAttributeName value:_durationSlider.tintColor range:NSMakeRange(28, 4)];
 	// Damping
-	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueGreen] range:NSMakeRange(93, 4)];
+	[attrString addAttribute:NSForegroundColorAttributeName value:_dampingSlider.tintColor range:NSMakeRange(93, 4)];
 	// Initial Velocity
-	[attrString addAttribute:NSForegroundColorAttributeName value:[UIColor neueRed] range:NSMakeRange(126, 4)];
+	[attrString addAttribute:NSForegroundColorAttributeName value:_velocitySlider.tintColor range:NSMakeRange(126, 4)];
 	
 	_codeLabel.attributedText = attrString;
 }
