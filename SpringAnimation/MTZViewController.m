@@ -15,6 +15,8 @@
 
 @interface MTZViewController ()
 
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
 /// The view controller housing the parameters of a spring animation.
 @property (strong, nonatomic) MTZSpringAnimationParametersViewController *parametersVC;
 
@@ -40,6 +42,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
+	UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+	btn.frame = CGRectMake(0, 0, 100, 40);
+	btn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+	[btn setTitle:@"Animation: Translate" forState:UIControlStateNormal];
+	[btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	[btn addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
+	
+	UINavigationItem *item = [[UINavigationItem alloc] init];
+	item.titleView = btn;
+	self.navigationBar.items = @[item];
+	
 	// Create parameters view controller.
 	self.parametersVC = [[MTZSpringAnimationParametersViewController alloc] initWithNibName:@"MTZSpringAnimationParametersViewController" bundle:nil];
 	// Add it to the appropriate container view.
@@ -47,8 +61,14 @@
 	
 	// Create animations view controller.
 	self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
+	self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
 	// Add it to the appropriate container view.
 	[self.animationsView addSubview:self.animationsVC.view];
+}
+
+- (void)didTapTitle:(id)sender
+{
+	NSLog(@"asdf");
 }
 
 // When the animate/play button is tapped.

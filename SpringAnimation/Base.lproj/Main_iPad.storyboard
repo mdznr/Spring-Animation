@@ -66,6 +66,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="animationsView" destination="5e6-0Q-ZF9" id="U4G-OY-He7"/>
+                        <outlet property="navigationBar" destination="ig5-Du-RUF" id="OkD-pG-YYZ"/>
                         <outlet property="parametersView" destination="zbD-xL-UbA" id="MUz-C8-dyr"/>
                         <outlet property="playBackControls" destination="Wav-wa-HYx" id="mKi-nS-Dut"/>
                         <outlet property="progressView" destination="qbQ-bN-4vv" id="E6a-3X-awR"/>
