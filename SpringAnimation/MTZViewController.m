@@ -12,10 +12,17 @@
 
 #import "MTZSpringAnimationTranslateViewController.h"
 #import "MTZSpringAnimationRotateViewController.h"
+#import "MTZAnimationSelectTableViewController.h"
 
 @interface MTZViewController ()
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
+/// The table view controller for selecting the animation (appears in a popover).
+@property (strong, nonatomic) MTZAnimationSelectTableViewController *animationsList;
+
+/// The popover showing the list of animations.
+@property (strong, nonatomic) UIPopoverController *animationsSelectPopover;
 
 /// The view controller housing the parameters of a spring animation.
 @property (strong, nonatomic) MTZSpringAnimationParametersViewController *parametersVC;
@@ -42,6 +49,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
+	// Create the means to select the animation.
 	UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
 	btn.frame = CGRectMake(0, 0, 100, 40);
 	btn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
@@ -50,9 +58,17 @@
 	[btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
 	[btn addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
 	
+	// Add the item to the navigation bar.
 	UINavigationItem *item = [[UINavigationItem alloc] init];
 	item.titleView = btn;
 	self.navigationBar.items = @[item];
+	
+	// Create the animation select table view.
+	self.animationsList = [[MTZAnimationSelectTableViewController alloc] initWithStyle:UITableViewStylePlain];
+	
+	// Create the popover.
+	self.animationsSelectPopover = [[UIPopoverController alloc] initWithContentViewController:self.animationsList];
+	self.animationsSelectPopover.popoverContentSize = CGSizeMake(280, 132);
 	
 	// Create parameters view controller.
 	self.parametersVC = [[MTZSpringAnimationParametersViewController alloc] initWithNibName:@"MTZSpringAnimationParametersViewController" bundle:nil];
@@ -68,8 +84,10 @@
 
 - (void)didTapTitle:(id)sender
 {
-	UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Choose an animation." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Translate", @"Rotate", nil];
-	[as showFromRect:self.navigationBar.frame inView:self.view animated:YES];
+//	UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Choose an animation." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Translate", @"Rotate", nil];
+//	[as showFromRect:self.navigationBar.frame inView:self.view animated:YES];
+	
+	[self.animationsSelectPopover presentPopoverFromRect:self.navigationBar.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 // When the animate/play button is tapped.
