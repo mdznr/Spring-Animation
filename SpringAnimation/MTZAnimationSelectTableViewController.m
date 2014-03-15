@@ -14,9 +14,10 @@
 @property (strong, nonatomic) NSArray *titles;
 
 /// The controllers of the possible animations.
-//@property (strong, nonatomic) NSDictionary *controllers;
+@property (strong, nonatomic) NSDictionary *controllers;
 
 @end
+
 
 @implementation MTZAnimationSelectTableViewController
 
@@ -32,6 +33,7 @@
 	
 	self.titles = @[@"Translate", @"Rotate", @"Expand"];
 }
+
 
 #pragma mark - Table view data source
 
@@ -71,21 +73,17 @@
     return NO;
 }
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+	// The title of the animation that was selected.
+	NSString *title = self.titles[indexPath.row];
+	
+	// Tell the delegate that the animation was selected.
+	[self.delegate tableViewController:self didSelectAnimationNamed:title];
 }
-*/
 
 @end

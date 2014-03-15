@@ -27,8 +27,6 @@
 		C9C090D218CEEC4F000E69CD /* MTZPlaybackControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090D118CEEC4F000E69CD /* MTZPlaybackControlsView.m */; };
 		C9C090D618CF0A77000E69CD /* MTZSpringAnimationRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090D418CF0A77000E69CD /* MTZSpringAnimationRotateViewController.m */; };
 		C9C090D718CF0A77000E69CD /* MTZSpringAnimationRotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C090D518CF0A77000E69CD /* MTZSpringAnimationRotateViewController.xib */; };
-		C9C090DE18CF9754000E69CD /* MTZActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090DB18CF9754000E69CD /* MTZActionSheet.m */; };
-		C9C090DF18CF9754000E69CD /* UIActionSheet+DelegateFix.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090DD18CF9754000E69CD /* UIActionSheet+DelegateFix.m */; };
 		C9C090ED18CFF696000E69CD /* MTZAnimationSelectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C090EB18CFF696000E69CD /* MTZAnimationSelectTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -77,10 +75,6 @@
 		C9C090D318CF0A77000E69CD /* MTZSpringAnimationRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationRotateViewController.h; path = SpringAnimation/MTZSpringAnimationRotateViewController.h; sourceTree = SOURCE_ROOT; };
 		C9C090D418CF0A77000E69CD /* MTZSpringAnimationRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationRotateViewController.m; path = SpringAnimation/MTZSpringAnimationRotateViewController.m; sourceTree = SOURCE_ROOT; };
 		C9C090D518CF0A77000E69CD /* MTZSpringAnimationRotateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationRotateViewController.xib; path = SpringAnimation/MTZSpringAnimationRotateViewController.xib; sourceTree = SOURCE_ROOT; };
-		C9C090DA18CF9754000E69CD /* MTZActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZActionSheet.h; sourceTree = "<group>"; };
-		C9C090DB18CF9754000E69CD /* MTZActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZActionSheet.m; sourceTree = "<group>"; };
-		C9C090DC18CF9754000E69CD /* UIActionSheet+DelegateFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+DelegateFix.h"; sourceTree = "<group>"; };
-		C9C090DD18CF9754000E69CD /* UIActionSheet+DelegateFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+DelegateFix.m"; sourceTree = "<group>"; };
 		C9C090EA18CFF696000E69CD /* MTZAnimationSelectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZAnimationSelectTableViewController.h; path = SpringAnimation/MTZAnimationSelectTableViewController.h; sourceTree = SOURCE_ROOT; };
 		C9C090EB18CFF696000E69CD /* MTZAnimationSelectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZAnimationSelectTableViewController.m; path = SpringAnimation/MTZAnimationSelectTableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -234,7 +228,6 @@
 		C9C090CF18CEEC18000E69CD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				C9C090D918CF9754000E69CD /* MTZActionSheet */,
 				C9C090CE18CEE9A1000E69CD /* AbstractClass.h */,
 			);
 			name = Helper;
@@ -249,17 +242,6 @@
 			);
 			name = Rotate;
 			sourceTree = "<group>";
-		};
-		C9C090D918CF9754000E69CD /* MTZActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				C9C090DA18CF9754000E69CD /* MTZActionSheet.h */,
-				C9C090DB18CF9754000E69CD /* MTZActionSheet.m */,
-				C9C090DC18CF9754000E69CD /* UIActionSheet+DelegateFix.h */,
-				C9C090DD18CF9754000E69CD /* UIActionSheet+DelegateFix.m */,
-			);
-			path = MTZActionSheet;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -364,9 +346,7 @@
 				C9C090C418CEDE63000E69CD /* MTZSpringAnimationViewerController.m in Sources */,
 				C9C090CA18CEE6CE000E69CD /* MTZSpringAnimationTranslateViewController.m in Sources */,
 				C9C090C018CEDAEC000E69CD /* MTZSpringAnimationParametersViewController.m in Sources */,
-				C9C090DE18CF9754000E69CD /* MTZActionSheet.m in Sources */,
 				C9C090ED18CFF696000E69CD /* MTZAnimationSelectTableViewController.m in Sources */,
-				C9C090DF18CF9754000E69CD /* UIActionSheet+DelegateFix.m in Sources */,
 				C9C090D218CEEC4F000E69CD /* MTZPlaybackControlsView.m in Sources */,
 				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
 				C9C090AE18CED161000E69CD /* main.m in Sources */,

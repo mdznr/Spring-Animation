@@ -14,7 +14,7 @@
 #import "MTZSpringAnimationRotateViewController.h"
 #import "MTZAnimationSelectTableViewController.h"
 
-@interface MTZViewController ()
+@interface MTZViewController () <MTZAnimationSelectTableViewControllerDelgate>
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
@@ -65,6 +65,7 @@
 	
 	// Create the animation select table view.
 	self.animationsList = [[MTZAnimationSelectTableViewController alloc] initWithStyle:UITableViewStylePlain];
+	self.animationsList.delegate = self;
 	
 	// Create the popover.
 	self.animationsSelectPopover = [[UIPopoverController alloc] initWithContentViewController:self.animationsList];
@@ -80,14 +81,6 @@
 //	self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
 	// Add it to the appropriate container view.
 	[self.animationsView addSubview:self.animationsVC.view];
-}
-
-- (void)didTapTitle:(id)sender
-{
-//	UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:@"Choose an animation." delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Translate", @"Rotate", nil];
-//	[as showFromRect:self.navigationBar.frame inView:self.view animated:YES];
-	
-	[self.animationsSelectPopover presentPopoverFromRect:self.navigationBar.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 // When the animate/play button is tapped.
@@ -118,10 +111,32 @@
 			   afterDelay:self.parametersVC.duration + TIME_TO_WAIT_AFTER_ANIMATION];
 }
 
+// The animation ended, reset the progress bar.
 - (void)resetProgress
 {
 	[self.progressView setProgress:0.0f animated:NO];
 }
+
+// The title in the navigation bar was tapped.
+- (void)didTapTitle:(id)sender
+{
+	[self.animationsSelectPopover presentPopoverFromRect:self.navigationBar.frame
+												  inView:self.view
+								permittedArrowDirections:UIPopoverArrowDirectionUp
+												animated:YES];
+}
+
+
+#pragma mark - MTZAnimationSelectTableViewControllerDelgate
+
+- (void)tableViewController:(MTZAnimationSelectTableViewController *)tableViewController
+	didSelectAnimationNamed:(NSString *)name
+{
+	[self.animationsSelectPopover dismissPopoverAnimated:YES];
+}
+
+
+#pragma mark - UIViewController Misc.
 
 - (BOOL)prefersStatusBarHidden
 {
