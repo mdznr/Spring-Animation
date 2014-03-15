@@ -76,9 +76,26 @@
 	// Add it to the appropriate container view.
 	[self.parametersView addSubview:self.parametersVC.view];
 	
+	// The default animation.
+	[self loadAnimationNamed:@"Translate"];
+}
+
+- (void)loadAnimationNamed:(NSString *)name
+{
 	// Create animations view controller.
-	self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
-//	self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
+	if ( [name isEqualToString:@"Translate"] ) {
+		self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
+	} else if ( [name isEqualToString:@"Rotate"] ) {
+		self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
+	} else {
+		
+	}
+	
+	// Remove all subviews of animations view
+	for ( UIView *subview in [self.animationsView subviews] ) {
+		[subview removeFromSuperview];
+	}
+	
 	// Add it to the appropriate container view.
 	[self.animationsView addSubview:self.animationsVC.view];
 }
@@ -132,6 +149,7 @@
 - (void)tableViewController:(MTZAnimationSelectTableViewController *)tableViewController
 	didSelectAnimationNamed:(NSString *)name
 {
+	[self loadAnimationNamed:name];
 	[self.animationsSelectPopover dismissPopoverAnimated:YES];
 }
 
