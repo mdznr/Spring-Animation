@@ -26,4 +26,7 @@
 /// The animation select table view controller's delegate
 @property (nonatomic) id<MTZAnimationSelectTableViewControllerDelgate> delegate;
 
+/// The names of all the animations shown.
+@property (strong, nonatomic) NSArray *animationNames;
+
 @end

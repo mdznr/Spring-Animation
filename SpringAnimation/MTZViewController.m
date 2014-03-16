@@ -56,7 +56,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	// All the possible animations.
-	_animations = @{@"Translate": [MTZSpringAnimationTranslateViewController class],
+	_animations = @{
+					@"Translate": [MTZSpringAnimationTranslateViewController class],
 					@"Rotate": [MTZSpringAnimationRotateViewController class]
 					};
 	
@@ -76,6 +77,7 @@
 	// Create the animation select table view.
 	self.animationsList = [[MTZAnimationSelectTableViewController alloc] initWithStyle:UITableViewStylePlain];
 	self.animationsList.delegate = self;
+	self.animationsList.animationNames = [self.animations allKeys];
 	
 	// Create the popover.
 	self.animationsSelectPopover = [[UIPopoverController alloc] initWithContentViewController:self.animationsList];

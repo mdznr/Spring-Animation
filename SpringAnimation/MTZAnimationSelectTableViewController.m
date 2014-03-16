@@ -10,12 +10,6 @@
 
 @interface MTZAnimationSelectTableViewController ()
 
-/// The titles of the possible animations.
-@property (strong, nonatomic) NSArray *titles;
-
-/// The controllers of the possible animations.
-@property (strong, nonatomic) NSDictionary *controllers;
-
 @end
 
 
@@ -24,14 +18,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	
-	self.titles = @[@"Translate", @"Rotate", @"Expand"];
 }
 
 
@@ -46,7 +32,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.titles.count;
+	return self.animationNames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -54,7 +40,7 @@
 	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
 	
     // Configure the cell...
-	cell.textLabel.text = self.titles[indexPath.row];
+	cell.textLabel.text = self.animationNames[indexPath.row];
  
     return cell;
 }
@@ -80,7 +66,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	// The title of the animation that was selected.
-	NSString *title = self.titles[indexPath.row];
+	NSString *title = self.animationNames[indexPath.row];
 	
 	// Tell the delegate that the animation was selected.
 	[self.delegate tableViewController:self didSelectAnimationNamed:title];
