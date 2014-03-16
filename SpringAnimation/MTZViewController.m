@@ -67,8 +67,8 @@
 	_titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	_titleButton.frame = CGRectMake(0, 0, 100, 40);
 	_titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-	[_titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	[_titleButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	[_titleButton setTitleColor:[UIColor colorWithRed:0.0f green:0.48f blue:1.0f alpha:1.0f]
+					   forState:UIControlStateNormal];
 	[_titleButton addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
 	
 	// Add the item to the navigation bar.
