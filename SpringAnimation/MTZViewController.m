@@ -18,7 +18,11 @@
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
+/// The control to interact with in the title view of the navigation bar.
 @property (strong, nonatomic) UIButton *titleButton;
+
+/// The animation names and corresponding classes.
+@property (strong, nonatomic) NSDictionary *animations;
 
 /// The table view controller for selecting the animation (appears in a popover).
 @property (strong, nonatomic) MTZAnimationSelectTableViewController *animationsList;
@@ -51,11 +55,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
+	// All the possible animations.
+	_animations = @{@"Translate": [MTZSpringAnimationTranslateViewController class],
+					@"Rotate": [MTZSpringAnimationRotateViewController class]
+					};
+	
 	// Create the means to select the animation.
 	_titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	_titleButton.frame = CGRectMake(0, 0, 100, 40);
 	_titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-	[_titleButton setTitle:@"Translate" forState:UIControlStateNormal];
 	[_titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 	[_titleButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
 	[_titleButton addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
@@ -84,16 +92,25 @@
 
 - (void)loadAnimationNamed:(NSString *)name
 {
-	// Create animations view controller.
-	if ( [name isEqualToString:@"Translate"] ) {
-		self.animationsVC = [[MTZSpringAnimationTranslateViewController alloc] initWithNibName:@"MTZSpringAnimationTranslateViewController" bundle:nil];
-	} else if ( [name isEqualToString:@"Rotate"] ) {
-		self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
-	} else {
+	// Find the animation.
+	BOOL foundAnimation = NO;
+	for ( NSString *animationName in [self.animations allKeys] ) {
+		if ( [animationName isEqualToString:name] ) {
+			// Create the animations view controller.
+			Class animationVC = [self.animations valueForKey:animationName];
+			NSString *nibName = NSStringFromClass(animationVC);
+			self.animationsVC = [[animationVC alloc] initWithNibName:nibName bundle:nil];;
+			foundAnimation = YES;
+			break;
+		}
+	}
+	
+	if ( !foundAnimation ) {
 		NSLog(@"Error: No animation named \"%@\"", name);
 		return;
 	}
 	
+	// Update the title (in the navigation bar).
 	self.title = name;
 	
 	// Remove all subviews of animations view
