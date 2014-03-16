@@ -12,6 +12,7 @@
 
 #import "MTZSpringAnimationTranslateViewController.h"
 #import "MTZSpringAnimationRotateViewController.h"
+#import "MTZSpringAnimationExpandViewController.h"
 #import "MTZAnimationSelectTableViewController.h"
 
 @interface MTZViewController () <MTZAnimationSelectTableViewControllerDelgate>
@@ -58,7 +59,8 @@
 	// All the possible animations.
 	_animations = @{
 					@"Translate": [MTZSpringAnimationTranslateViewController class],
-					@"Rotate": [MTZSpringAnimationRotateViewController class]
+					@"Rotate": [MTZSpringAnimationRotateViewController class],
+					@"Expand": [MTZSpringAnimationExpandViewController class]
 					};
 	
 	// Create the means to select the animation.

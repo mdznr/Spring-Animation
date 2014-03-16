@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C914B28D18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C914B28B18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.m */; };
+		C914B28E18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C914B28C18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.xib */; };
 		C935723018CEABF00022F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935722F18CEABF00022F5D6 /* Foundation.framework */; };
 		C935723218CEABF00022F5D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723118CEABF00022F5D6 /* CoreGraphics.framework */; };
 		C935723418CEABF00022F5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C935723318CEABF00022F5D6 /* UIKit.framework */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C914B28A18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTZSpringAnimationExpandViewController.h; path = SpringAnimation/MTZSpringAnimationExpandViewController.h; sourceTree = SOURCE_ROOT; };
+		C914B28B18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTZSpringAnimationExpandViewController.m; path = SpringAnimation/MTZSpringAnimationExpandViewController.m; sourceTree = SOURCE_ROOT; };
+		C914B28C18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MTZSpringAnimationExpandViewController.xib; path = SpringAnimation/MTZSpringAnimationExpandViewController.xib; sourceTree = SOURCE_ROOT; };
 		C935722C18CEABF00022F5D6 /* SpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935722F18CEABF00022F5D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C935723118CEABF00022F5D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C914B28918D640F300EC9C80 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				C914B28A18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.h */,
+				C914B28B18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.m */,
+				C914B28C18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.xib */,
+			);
+			name = Expand;
+			sourceTree = "<group>";
+		};
 		C935722318CEABF00022F5D6 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C090CD18CEE6DD000E69CD /* Generic */,
+				C914B28918D640F300EC9C80 /* Expand */,
 				C9C090D818CF0A7A000E69CD /* Rotate */,
 				C9C090CC18CEE6D3000E69CD /* Translate */,
 			);
@@ -326,6 +342,7 @@
 				C9C090BB18CED219000E69CD /* Main_iPad.storyboard in Resources */,
 				C9C090A318CED13C000E69CD /* Images.xcassets in Resources */,
 				C9C090D718CF0A77000E69CD /* MTZSpringAnimationRotateViewController.xib in Resources */,
+				C914B28E18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +366,7 @@
 				C9C090ED18CFF696000E69CD /* MTZAnimationSelectTableViewController.m in Sources */,
 				C9C090D218CEEC4F000E69CD /* MTZPlaybackControlsView.m in Sources */,
 				C9C090A018CED136000E69CD /* MTZAppDelegate.m in Sources */,
+				C914B28D18D6414B00EC9C80 /* MTZSpringAnimationExpandViewController.m in Sources */,
 				C9C090AE18CED161000E69CD /* main.m in Sources */,
 				C9C090A118CED136000E69CD /* MTZViewController.m in Sources */,
 				C9C090D618CF0A77000E69CD /* MTZSpringAnimationRotateViewController.m in Sources */,
