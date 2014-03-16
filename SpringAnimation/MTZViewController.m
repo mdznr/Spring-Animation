@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
+@property (strong, nonatomic) UIButton *titleButton;
+
 /// The table view controller for selecting the animation (appears in a popover).
 @property (strong, nonatomic) MTZAnimationSelectTableViewController *animationsList;
 
@@ -50,17 +52,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
 	
 	// Create the means to select the animation.
-	UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-	btn.frame = CGRectMake(0, 0, 100, 40);
-	btn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-	[btn setTitle:@"Translate" forState:UIControlStateNormal];
-	[btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	[btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-	[btn addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
+	_titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
+	_titleButton.frame = CGRectMake(0, 0, 100, 40);
+	_titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+	[_titleButton setTitle:@"Translate" forState:UIControlStateNormal];
+	[_titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[_titleButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+	[_titleButton addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
 	
 	// Add the item to the navigation bar.
 	UINavigationItem *item = [[UINavigationItem alloc] init];
-	item.titleView = btn;
+	item.titleView = _titleButton;
 	self.navigationBar.items = @[item];
 	
 	// Create the animation select table view.
@@ -88,8 +90,11 @@
 	} else if ( [name isEqualToString:@"Rotate"] ) {
 		self.animationsVC = [[MTZSpringAnimationRotateViewController alloc] initWithNibName:@"MTZSpringAnimationRotateViewController" bundle:nil];
 	} else {
-		
+		NSLog(@"Error: No animation named \"%@\"", name);
+		return;
 	}
+	
+	self.title = name;
 	
 	// Remove all subviews of animations view
 	for ( UIView *subview in [self.animationsView subviews] ) {
@@ -98,6 +103,12 @@
 	
 	// Add it to the appropriate container view.
 	[self.animationsView addSubview:self.animationsVC.view];
+}
+
+- (void)setTitle:(NSString *)title
+{
+	[super setTitle:title];
+	[_titleButton setTitle:title forState:UIControlStateNormal];
 }
 
 // When the animate/play button is tapped.
