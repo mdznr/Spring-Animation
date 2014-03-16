@@ -14,7 +14,7 @@
                         <subviews>
                             <containerView contentMode="scaleToFill" id="5e6-0Q-ZF9" userLabel="Animations View">
                                 <rect key="frame" x="0.0" y="44" width="768" height="738"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </containerView>
                             <containerView contentMode="scaleToFill" id="zbD-xL-UbA" userLabel="Parameters View Controller">
