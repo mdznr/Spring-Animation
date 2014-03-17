@@ -29,4 +29,7 @@
 /// The names of all the animations shown.
 @property (strong, nonatomic) NSArray *animationNames;
 
+/// The name of the selected animation in the table view.
+@property (strong, nonatomic) NSString *currentAnimationName;
+
 @end

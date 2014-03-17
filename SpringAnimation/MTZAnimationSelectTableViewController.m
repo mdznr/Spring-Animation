@@ -21,6 +21,25 @@
 }
 
 
+- (void)setCurrentAnimationName:(NSString *)currentAnimationName
+{
+	for ( NSUInteger i=0; i<self.animationNames.count; ++i ) {
+		NSString *animationName = self.animationNames[i];
+		NSIndexPath *index = [NSIndexPath indexPathForRow:i inSection:0];
+		UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:index];
+		if ( [animationName isEqualToString:currentAnimationName] ) {
+			_currentAnimationName = currentAnimationName;
+			
+			// Add a checkmark.
+			cell.accessoryType = UITableViewCellAccessoryCheckmark;
+		} else {
+			// Remove any checkmark.
+			cell.accessoryType = UITableViewCellAccessoryNone;
+		}
+	}
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
