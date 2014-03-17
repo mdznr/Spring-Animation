@@ -67,7 +67,7 @@
 	_titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	_titleButton.frame = CGRectMake(0, 0, 100, 40);
 	_titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-	[_titleButton setTitleColor:[UIColor colorWithRed:0.0f green:0.48f blue:1.0f alpha:1.0f]
+	[_titleButton setTitleColor:[UIApplication sharedApplication].keyWindow.tintColor
 					   forState:UIControlStateNormal];
 	UIImage *image = [UIImage imageNamed:@"DownArrow"];
 	[_titleButton setImage:image forState:UIControlStateNormal];
@@ -173,6 +173,10 @@
 // The title in the navigation bar was tapped.
 - (void)didTapTitle:(id)sender
 {
+	NSString *currentAnimationName = [self.titleButton titleForState:UIControlStateNormal];
+	MTZAnimationSelectTableViewController *vc = (MTZAnimationSelectTableViewController *) self.animationsSelectPopover.contentViewController;
+	vc.currentAnimationName = currentAnimationName;
+	
 	[self.animationsSelectPopover presentPopoverFromRect:self.navigationBar.frame
 												  inView:self.view
 								permittedArrowDirections:UIPopoverArrowDirectionUp
