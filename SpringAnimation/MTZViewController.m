@@ -71,8 +71,6 @@
 					   forState:UIControlStateNormal];
 	UIImage *image = [UIImage imageNamed:@"DownArrow"];
 	[_titleButton setImage:image forState:UIControlStateNormal];
-	_titleButton.imageEdgeInsets = UIEdgeInsetsMake(0.0f, _titleButton.frame.size.width - image.size.width, 0.0f, 0.0f);
-	_titleButton.titleEdgeInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, image.size.width);
 	[_titleButton addTarget:self action:@selector(didTapTitle:) forControlEvents:UIControlEventTouchUpInside];
 	
 	// Add the item to the navigation bar.
@@ -134,6 +132,11 @@
 {
 	[super setTitle:title];
 	[_titleButton setTitle:title forState:UIControlStateNormal];
+	
+	UIImage *image = [_titleButton imageForState:UIControlStateNormal];
+	
+	_titleButton.imageEdgeInsets = UIEdgeInsetsMake(0.0f, _titleButton.frame.size.width - image.size.width, 0.0f, 0.0f);
+	_titleButton.titleEdgeInsets = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, image.size.width);
 }
 
 // When the animate/play button is tapped.
@@ -144,10 +147,10 @@
 					usingSpringWithDamping:self.parametersVC.dampingRatio
 					 initialSpringVelocity:self.parametersVC.velocity];
 	
-	[self resetProgress];
 	[NSObject cancelPreviousPerformRequestsWithTarget:self
 											 selector:@selector(resetProgress)
 											   object:nil];
+	[self resetProgress];
 	
 	// Animate the progress of the animation at the same rate.
 	[UIView animateWithDuration:self.parametersVC.duration
